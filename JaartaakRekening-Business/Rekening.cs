@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JaartaakRekening_Business
 {
-    public class Class1
+    public class Rekening
     {
     }
 }
