@@ -8,5 +8,7 @@ namespace JaartaakRekening_Business
 {
     public class Rekening
     {
+        //test
+
     }
 }
