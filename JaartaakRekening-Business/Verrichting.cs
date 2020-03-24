@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace JaartaakRekening_Business
 {
-    public class Rekening
+    class Verrichting
     {
-        List<Verrichting> _verrichting;
     }
 }
