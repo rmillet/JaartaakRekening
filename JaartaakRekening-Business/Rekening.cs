@@ -8,5 +8,6 @@ namespace JaartaakRekening_Business
 {
     public class Rekening
     {
+        hallo ik ben kakkere kongs
     }
 }
