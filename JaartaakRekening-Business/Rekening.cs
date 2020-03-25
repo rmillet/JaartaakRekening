@@ -8,7 +8,7 @@ namespace JaartaakRekening_Business
 {
     public class Rekening
     {
-        List<Verrichting> _verrichting;
+        private List<Verrichting> _verrichting;
 
         //Constructor
         public Rekening()
@@ -17,9 +17,9 @@ namespace JaartaakRekening_Business
         }
 
         //Properties
-        public List <Verrichting> 
+        public List<Verrichting> Verrichting
         {
-             return Verrichting;
+            get { return _verrichting; }
         }
 
         //Methodes
@@ -33,6 +33,9 @@ namespace JaartaakRekening_Business
             return 5; //moet nog aangepast
         }
 
-        public override string ToString();
+        public override string ToString()
+        {
+            return "...";
+        }
     }
 }
