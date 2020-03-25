@@ -16,6 +16,12 @@ namespace JaartaakRekening_Business
             _verrichting = new List<Verrichting>();
         }
 
+        //Properties
+        public List <Verrichting> 
+        {
+             return Verrichting;
+        }
+
         //Methodes
         public void voegVerrichtingToe(Verrichting verrichting)
         {
@@ -26,5 +32,7 @@ namespace JaartaakRekening_Business
         {
             return 5; //moet nog aangepast
         }
+
+        public override string ToString();
     }
 }
