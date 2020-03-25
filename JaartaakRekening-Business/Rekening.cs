@@ -25,7 +25,24 @@ namespace JaartaakRekening_Business
 
         public double vraagRekeningstandOp()
         {
-            return 5; //moet nog aangepast worden
+            double saldo=0;
+            
+            // vraag voor elke verrichting het bedrag op en telop/trek af bij je saldo
+            
+            return saldo; 
         }
+
+        public List<string>  vraagVerrichtingenOp()
+        {
+            List<string> temp = new List<string>();
+
+            // foreach om alle verrichtingen op te vragen --> zie tostring bij verrichting
+            // en voeg ze toe aan temp
+            //zie cursus
+
+            return temp;
+        }
+
+
     }
 }

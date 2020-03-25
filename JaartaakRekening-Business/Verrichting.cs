@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JaartaakRekening_Business
 {
-    class Verrichting
+    public class Verrichting
     {
         
         private string _omschrijving;
@@ -20,9 +20,15 @@ namespace JaartaakRekening_Business
             _bedrag = bedrag;
             _datum = datum;
         }
+
+
+        // alle eigenschappen  nog maken R+W
+
+
         //we hebbben nood aan en eigen ToString om de waarden van de lijsten te kunnen presenteren
         public override string ToString()
         {
+            // zie oppgave screenshot p.6 omschrijving (bedrag) + datum
             return "...";
         }
     }
