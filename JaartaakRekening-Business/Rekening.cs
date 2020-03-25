@@ -8,6 +8,23 @@ namespace JaartaakRekening_Business
 {
     public class Rekening
     {
-        hallo ik ben kakkere kongs
+        List<Verrichting> _verrichting;
+
+        //Constructor
+        public Rekening()
+        {
+            _verrichting = new List<Verrichting>();
+        }
+
+        //Methodes
+        public void voegVerrichtingToe(Verrichting verrichting)
+        {
+            _verrichting.Add(verrichting);
+        }
+
+        public double vraagRekeningstandOp()
+        {
+            return 5; //moet nog aangepast
+        }
     }
 }
