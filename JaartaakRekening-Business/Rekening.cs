@@ -8,7 +8,7 @@ namespace JaartaakRekening_Business
 {
     public class Rekening
     {
-        List<Verrichting> _verrichting;
+        private List<Verrichting> _verrichting;
 
         //Constructor
         public Rekening()
@@ -16,8 +16,13 @@ namespace JaartaakRekening_Business
             _verrichting = new List<Verrichting>();
         }
 
-        //Methodes
+        //Properties
+        public List<Verrichting> Verrichting
+        {
+            get { return _verrichting; }
+        }
 
+        //Methodes
         public void voegVerrichtingToe(Verrichting verrichting)
         {
             _verrichting.Add(verrichting);
@@ -25,24 +30,12 @@ namespace JaartaakRekening_Business
 
         public double vraagRekeningstandOp()
         {
-            double saldo=0;
-            
-            // vraag voor elke verrichting het bedrag op en telop/trek af bij je saldo
-            
-            return saldo; 
+            return 5; //moet nog aangepast
         }
 
-        public List<string>  vraagVerrichtingenOp()
+        public override string ToString()
         {
-            List<string> temp = new List<string>();
-
-            // foreach om alle verrichtingen op te vragen --> zie tostring bij verrichting
-            // en voeg ze toe aan temp
-            //zie cursus
-
-            return temp;
+            return "...";
         }
-
-
     }
 }
