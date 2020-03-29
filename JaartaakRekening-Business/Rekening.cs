@@ -30,6 +30,7 @@ namespace JaartaakRekening_Business
 
         public double vraagRekeningstandOp()
         {
+
             return 5; //moet nog aangepast
         }
 
