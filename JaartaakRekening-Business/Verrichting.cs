@@ -22,8 +22,24 @@ namespace JaartaakRekening_Business
         }
 
 
-        // alle eigenschappen  nog maken R+W
+        //Properties
+        public string Omschrijving
+        {
+            get { return _omschrijving; }
+            set { _omschrijving = value; }
+        }
 
+        public double Bedrag
+        {
+            get { return _bedrag; }
+            set { _bedrag = value; }
+        }
+
+        public DateTime Datum
+        {
+            get { return _datum; }
+            set { _datum = value; }
+        }
 
         //we hebbben nood aan en eigen ToString om de waarden van de lijsten te kunnen presenteren
         public override string ToString()
