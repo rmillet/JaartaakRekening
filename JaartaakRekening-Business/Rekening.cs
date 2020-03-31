@@ -19,7 +19,7 @@ namespace JaartaakRekening_Business
         //Properties
         public List<Verrichting> Verrichting
         {
-            get { return _verrichting; }
+            get { return _verrichting; } 
         }
 
         //Methodes
