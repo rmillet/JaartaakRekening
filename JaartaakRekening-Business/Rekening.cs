@@ -34,9 +34,6 @@ namespace JaartaakRekening_Business
             return 5; //moet nog aangepast
         }
 
-        public override string ToString()
-        {
-            return "...";
-        }
+        
     }
 }
