@@ -36,7 +36,12 @@ namespace JaartaakRekening_Business
             //uit de lijst van verrichtingen vraag je per verrichting telkens het bedrag op (for each)
             // cursus zie pag. 
 
-            saldo=...;
+            foreach (Verrichting temp in _verrichting)
+            {
+                saldo = saldo + Bedrag;
+            }
+
+               
             return saldo;
         }
 
