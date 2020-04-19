@@ -38,7 +38,7 @@ namespace JaartaakRekening_Business
 
             foreach (Verrichting temp in _verrichting)
             {
-                saldo = saldo + Bedrag;
+                saldo = saldo + temp.Bedrag;
             }
 
                
