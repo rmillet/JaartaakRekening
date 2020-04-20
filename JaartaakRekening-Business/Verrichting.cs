@@ -45,7 +45,9 @@ namespace JaartaakRekening_Business
         public override string ToString()
         {
             // zie oppgave screenshot p.6 omschrijving (bedrag) + datum
-            return _omschrijving + "( " + _bedrag + ")" + " op " + _datum;
+            return _omschrijving + "( " + _bedrag + ")" + " op " + _datum.ToShortDateString();
         }
+
+
     }
 }

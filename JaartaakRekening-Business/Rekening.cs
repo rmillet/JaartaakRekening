@@ -39,12 +39,27 @@ namespace JaartaakRekening_Business
             foreach (Verrichting temp in _verrichting)
             {
                 saldo = saldo + temp.Bedrag;
-            }
-
-               
+            }               
             return saldo;
         }
 
-        
+        /// <summary>
+        /// Vraagt een lijst van de verrichtingen op
+        /// </summary>
+        /// <returns>lijst van verrichtingen</returns>
+        public List<string> vraagVerrichtingenOp()
+        {
+            List<string> temp = new List<string>();
+            foreach (Verrichting opdr in _verrichting)
+            {
+                temp.Add(opdr.ToString());
+            }
+            return temp;
+        }
+
+
+
+
+
     }
 }
