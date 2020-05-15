@@ -20,7 +20,9 @@ namespace JaartaakRekening_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string omschrijving = Interaction.InputBox("geef een omschrijving in:");
+            string omschrijving = Interaction.InputBox("geef een omschrijving in: ");
+            double bedrag = Convert.ToDouble(Interaction.InputBox("Geef het bedrag in: "));
+            DateTime datum = Convert.ToDateTime(Interaction.InputBox("Geef de datum in (dd/mm/jjjj): "));
         }
 
         private void Form1_Load(object sender, EventArgs e)
