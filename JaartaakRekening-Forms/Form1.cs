@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
+using JaartaakRekening_Business;
 
 namespace JaartaakRekening_Forms
 {
     public partial class Form1 : Form
     {
+        private Rekening _rekening;
         public Form1()
         {
             InitializeComponent();
