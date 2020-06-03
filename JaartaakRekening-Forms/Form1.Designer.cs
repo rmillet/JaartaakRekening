@@ -60,6 +60,7 @@
             this.lstInfo.Name = "lstInfo";
             this.lstInfo.Size = new System.Drawing.Size(235, 147);
             this.lstInfo.TabIndex = 2;
+            this.lstInfo.SelectedIndexChanged += new System.EventHandler(this.lstInfo_SelectedIndexChanged);
             // 
             // lbl
             // 
