@@ -18,7 +18,7 @@ namespace JaartaakRekening_Forms
         public Form1()
         {
             InitializeComponent();
-            
+            _rekening = new Rekening();
             
         }
 
@@ -28,7 +28,22 @@ namespace JaartaakRekening_Forms
             double bedrag = Convert.ToDouble(Interaction.InputBox("Geef het bedrag in: "));
             DateTime datum = Convert.ToDateTime(Interaction.InputBox("Geef de datum in (dd/mm/jjjj): "));
 
-            
+            Verrichting f = new Verrichting(omschrijving, bedrag, datum);
+            _rekening.voegVerrichtingToe(f);
+            lstInfo.DataSource = null;
+            lstInfo.DataSource = _rekening.vraagVerrichtingenOp();
+
+            lblsaldo.Text = _rekening.vraagRekeningstandOp().ToString("C");
+            if (lblsaldo.Text = )
+            {
+                lblsaldo.ForeColor = System.Drawing.Color.Red;
+            }
+            else
+            {
+                lblsaldo.ForeColor = System.Drawing.Color.Green;
+            }
+
+
 
         }
         

@@ -30,7 +30,7 @@ namespace JaartaakRekening_Business
 
         public double vraagRekeningstandOp()
         {
-            // een berekening vor het bepalen van het saldo
+            // een berekening voor het bepalen van het saldo
             double saldo = 0;
 
             //uit de lijst van verrichtingen vraag je per verrichting telkens het bedrag op (for each)
