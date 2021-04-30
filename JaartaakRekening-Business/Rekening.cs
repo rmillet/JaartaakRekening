@@ -16,7 +16,7 @@ namespace JaartaakRekening_Business
             _verrichting = new List<Verrichting>();
         }
 
-        //Properties
+        //Properties.
         public List<Verrichting> Verrichting
         {
             get { return _verrichting; } 
